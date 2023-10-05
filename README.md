@@ -1,4 +1,3 @@
-
 # C++ Fundamentals: Building a Strong Foundation
 
 ![](./images/C++.png)
@@ -10,12 +9,12 @@ In this blog series, we will cover the essential building blocks of C++ programm
 By the end of this series, you'll have a strong foundation in C++, setting the stage for your journey into more advanced aspects of this powerful programming language. So let's get started
 
 ---
+
 ### Programming 101: A Brief Overview
 
 Before learning C++ or any other programming language, one should know what programming actually is. Let's understand it in a practical and relatable way
 
 ![](./images/programming-101.png)
-
 
 **Programming is like making coffee: it's a process of following a recipe to create something delicious.**
 
@@ -77,21 +76,21 @@ Imagine that you are a carpenter. You have a toolbox full of tools that you can 
 
 Some of the tools in C++ toolbox include:
 
-- **Data types:** These are used to store different types of information, such as numbers, strings, floats and Boolean values.
-- **Control flow:** These are used to control the flow of execution of your program.
-- **Functions:** These are reusable blocks of code that can be used to perform specific tasks.
-- **Classes and objects:** These are used to create reusable code modules that can be used to model real-world objects and their interactions.
+-   **Data types:** These are used to store different types of information, such as numbers, strings, floats and Boolean values.
+-   **Control flow:** These are used to control the flow of execution of your program.
+-   **Functions:** These are reusable blocks of code that can be used to perform specific tasks.
+-   **Classes and objects:** These are used to create reusable code modules that can be used to model real-world objects and their interactions.
 
 Don't worry, you don't have to understand them right now. We will go through them in an easy order and way to understand each concept.
 
->You can imagine that C++ is a magic wand. With C++, you can create anything you can imagine, from simple programs to complex applications.
+> You can imagine that C++ is a magic wand. With C++, you can create anything you can imagine, from simple programs to complex applications.
 >
->Just like a magic wand, C++ is a powerful tool, but it can also be dangerous if used incorrectly. It is important to learn how to use C++ safely and responsibly.
+> Just like a magic wand, C++ is a powerful tool, but it can also be dangerous if used incorrectly. It is important to learn how to use C++ safely and responsibly.
 
 Before getting to know this magic wand, lets get to know how it was born.
 
 ![](./images/history-c++.jpg)
-	*Image Credit: Unstop*
+_Image Credit: Unstop_
 
 C++ was born in 1979, when Bjarne Stroustrup first started developing it. C++ was a small and simple language at first, but it grew and matured over time.
 
@@ -109,27 +108,25 @@ C++ continues to evolve today, as new features are added and the language become
 
 ---
 
-
 ### Writing Your First C++ Program: Hello World
 
 Okay, Lets write some code with our magic wand C++ and do some magic and understand how does this magic work.
 
 ![](./images/first-hello-world.png)
 
-
 This is the basic simple Hello World program written in C++ where the program will just display us "Hello World" . But how does this code actually works.
 
-From what we are seeing in this code, we see that there is something in 
+From what we are seeing in this code, we see that there is something in
 
 ```c++
 cout << "Hello World";
 ```
 
-and we are seeing `Hello World` in the output. That means whatever we write in those quotation marks in the exact same code structure, the program will give us an output of those words. Lets try out with a different text and see if it prints. 
+and we are seeing `Hello World` in the output. That means whatever we write in those quotation marks in the exact same code structure, the program will give us an output of those words. Lets try out with a different text and see if it prints.
 
 ![](./images/i-am-learning-c++.png)
 
->Output
+> Output
 
 ```bash
 I am learning C++
@@ -137,13 +134,14 @@ I am learning C++
 
 Here we can see that yes whatever we are writing inside those double quotations, it is getting displayed in the terminal. You can try it out displaying your own name in the terminal.
 
-so if we break this program, we can see this 
+so if we break this program, we can see this
 ![](./images/explain-hello-world.png)
 where we can divide the whole program into two parts
+
 1. Header File
 2. Main Function
 
-In the Header file area we mainly declare that which C++ files we will be using to run our programs. In this particular example we are using `iostream` header file. To use a header file we need to write `#include<header-file-name>` because only then the C++ compiler will understand that we want to use this header file in our program. 
+In the Header file area we mainly declare that which C++ files we will be using to run our programs. In this particular example we are using `iostream` header file. To use a header file we need to write `#include<header-file-name>` because only then the C++ compiler will understand that we want to use this header file in our program.
 
 Second part is the Main Function area where we will be doing most of our works. The `main()` function in C++ is like the starting gate at a race. It is the first function that is executed when a C++ program is run. The `main()` function in C++ is like the starting gate for your program. When the program starts, the `main()` function is executed. The `main()` function then tells your program what to do.
 
@@ -151,16 +149,17 @@ Another way of understanding the `main()` function is that imagine you are a che
 
 If you follow the recipe correctly, you will end up with a delicious meal. But if you make a mistake in the recipe, you may end up with a disaster.
 
-The same is true for the `main()` function in C++. If you write the `main()` function correctly, your program will work as expected. But if you make a mistake in the `main()` function, your program may not work at all. 
+The same is true for the `main()` function in C++. If you write the `main()` function correctly, your program will work as expected. But if you make a mistake in the `main()` function, your program may not work at all.
 
 Now if we look inside the `main()` function we can see that the first line is:
+
 ```c++
 cout << "I am learning C++";
 ```
 
-where `I am learning C++` gets displayed on the terminal/console. The `cout` is a short form of "console output". It is a predefined object in the `std` namespace that is used to print output to the console.  
+where `I am learning C++` gets displayed on the terminal/console. The `cout` is a short form of "console output". It is a predefined object in the `std` namespace that is used to print output to the console.
 
-And the `return 0` statement in the end of the `main()` function in C++ tells the operating system that the program has terminated successfully. 
+And the `return 0` statement in the end of the `main()` function in C++ tells the operating system that the program has terminated successfully.
 
 The operating system uses the return value from the `main()` function to determine how to exit the program. If the return value is 0, the operating system knows that the program terminated successfully. Otherwise, the operating system knows that the program terminated with an error.
 
@@ -174,26 +173,29 @@ Imagine that you are a carpenter and you are building a bookshelf. You need to s
 
 Variables in C++ work in a similar way. You can use variables to store different types of information, such as numbers, strings, and Boolean values.
 
-There are  different sizes and types of boxes/container to store information in which are known as different data types. These data types are :
+There are different sizes and types of boxes/container to store information in which are known as different data types. These data types are :
 
 ![](./images/data-type-table.png)
 
-- **int:** Whole numbers like 1, 2, 3, and 4 - a box of whole numbers from -2147483648 to 2147483647.
-- **float:** Decimal numbers like 3.14159 and 0.5 - a box of decimal numbers precise to at least 7 decimal places.
-- **double:** Even more precise decimal numbers than floats - a box of decimal numbers precise to at least 15 decimal places.
-- **char:** Single characters like 'a', 'b', and 'c' - a box of single characters from 'a' to 'z' and from 'A' to 'Z'.
-- **string:** Sequences of characters like "hello world" - a box of sequences of characters like "hello world" or "1234567890".
-- **bool:** True or false values - a box of true or false.
+-   **int:** Whole numbers like 1, 2, 3, and 4 - a box of whole numbers from -2147483648 to 2147483647.
+-   **float:** Decimal numbers like 3.14159 and 0.5 - a box of decimal numbers precise to at least 7 decimal places.
+-   **double:** Even more precise decimal numbers than floats - a box of decimal numbers precise to at least 15 decimal places.
+-   **char:** Single characters like 'a', 'b', and 'c' - a box of single characters from 'a' to 'z' and from 'A' to 'Z'.
+-   **string:** Sequences of characters like "hello world" - a box of sequences of characters like "hello world" or "1234567890".
+-   **bool:** True or false values - a box of true or false.
 
 we declare a variable in this format:
+
 ```c++
 data_type variable_name = value;
 ```
- where in the data_type we will declare the variable type whether it will be an int or a float or string. such as 
- ```c++
- #include<iostream>
- using namespace std;
-int main() 
+
+where in the data_type we will declare the variable type whether it will be an int or a float or string. such as
+
+```c++
+#include<iostream>
+using namespace std;
+int main()
 {
 	string language = "C++";
 	int my_number = 17;
@@ -212,7 +214,7 @@ There are some general rules for naming a variable. Those are
 
 1. Names can contain letters, digits and underscores
 
-2. Names must begin with a letter or an underscore (_)
+2. Names must begin with a letter or an underscore (\_)
 
 3. Names are case sensitive (myName and myname are different variables)
 
@@ -220,8 +222,7 @@ There are some general rules for naming a variable. Those are
 
 5. Reserved words (like C++ keywords, such as int) cannot be used as names.
 
-__Identifiers :__ All C++ variables must be identified with unique names. These unique names are called identifiers.
-
+**Identifiers :** All C++ variables must be identified with unique names. These unique names are called identifiers.
 
 ![](./images/constants.png)
 
@@ -247,7 +248,6 @@ Constants are a valuable tool for writing clear and concise code. They can help 
 Imagine that you have a box of constant values. You can put any value in the box, but once you put it in, you cannot take it out.
 
 Constants are like the values in this box. They are known and cannot be changed.
-
 
 ![](./images/strings.png)
 
@@ -297,7 +297,7 @@ Suppose you are a baker and you are making a cake. You use string concatenation 
 
 String concatenation in C++ is like the baker using different ingredients to create a new cake. It allows you to combine different strings to create a new string.
 
-##### Append Child Method: 
+##### Append Child Method:
 
 The `append()` function in C++ is used to concatenate a string to the end of another string.
 
@@ -331,7 +331,6 @@ The `append()` function in C++ is like the chef using the `append()` function to
 
 #### Chapter 2: Operators in C++
 
-
 ![](./images/C++Operators.png)
 
 Operators in C++ are symbols that perform operations on variables and expressions.
@@ -343,21 +342,20 @@ There are many different types of operators in C++, but they can be broadly cate
 3. Comparison operators
 4. Logical operators
 
-
-##### 1. Arithmetic Operators: 
+##### 1. Arithmetic Operators:
 
 Arithmetic operators in C++ are used to perform mathematical operations on numbers.
 The following table shows the most common arithmetic operators in C++:
 
-|  Operator | Name  | Description  | Example  |
-|---|---|---|---|
-| + | Addition | Adds together two values | a + b |
-| - | Subtraction | Subtracts one value from another | a - b |
-| * | Multiplication | Multiplies two values | a * b |
-| / | Division | Divides one value by another | a / b |
-| % | Modulus | Returns the division remainder | a % b |
-| ++ | Increment | Increases the value of a variable by 1 | ++a |
-| -- | Decrement | Decreases the value of a variable by 1 | --a |
+| Operator | Name           | Description                            | Example |
+| -------- | -------------- | -------------------------------------- | ------- |
+| +        | Addition       | Adds together two values               | a + b   |
+| -        | Subtraction    | Subtracts one value from another       | a - b   |
+| \*       | Multiplication | Multiplies two values                  | a \* b  |
+| /        | Division       | Divides one value by another           | a / b   |
+| %        | Modulus        | Returns the division remainder         | a % b   |
+| ++       | Increment      | Increases the value of a variable by 1 | ++a     |
+| --       | Decrement      | Decreases the value of a variable by 1 | --a     |
 
 Arithmetic operators can be used to perform calculations on variables and expressions. For example, the following code calculates the sum of two numbers and assigns the result to a variable called `result`:
 
@@ -366,7 +364,6 @@ int a = 10;
 int b = 20;
 int result = a + b;
 ```
-
 
 The following code calculates the average of three numbers and prints the result to the console:
 
@@ -381,20 +378,20 @@ cout << "The average is: " << average << endl;
 
 Arithmetic operators are a fundamental part of C++ programming. They allow you to perform calculations on numbers and variables.
 
-##### 2. Assignment Operators: 
+##### 2. Assignment Operators:
 
 Assignment operators in C++ are used to assign values to variables.
 
 The following table shows the most common assignment operators in C++:
 
-| Operator | Description |
-|---|---|
-| `=` | Simple assignment | 
-| `+=` | Compound assignment (addition)|
-| `-=` | Compound assignment (subtraction)| 
-| `*=` | Compound assignment (multiplication)| 
-| `/=` | Compound assignment (division)|
-| `%=` | Compound assignment (modulo)|
+| Operator | Description                          |
+| -------- | ------------------------------------ |
+| `=`      | Simple assignment                    |
+| `+=`     | Compound assignment (addition)       |
+| `-=`     | Compound assignment (subtraction)    |
+| `*=`     | Compound assignment (multiplication) |
+| `/=`     | Compound assignment (division)       |
+| `%=`     | Compound assignment (modulo)         |
 
 Assignment operators are used to store values in variables. For example, the following code assigns the value 10 to the variable `a`:
 
@@ -414,20 +411,20 @@ Imagine that you have a box and you want to store a value in it. You use the ass
 
 Assignment operators in C++ are like the boxes that you use to store values in your programs. They allow you to store values in variables and manipulate them.
 
-##### 3. Comparison Operators: 
+##### 3. Comparison Operators:
 
 Comparison operators in C++ are used to compare two values and return a boolean value, which is either true or false.
 
 The following table shows the most common comparison operators in C++:
 
-| Operator | Description |
-|---|---|
-| `<` | Less than | 
-| `>` | Greater than |
-| `<=` | Less than or equal to |
-| `>=` | Greater than or equal to |
-| `==` | Equal to | 
-| `!=` | Not equal to |
+| Operator | Description              |
+| -------- | ------------------------ |
+| `<`      | Less than                |
+| `>`      | Greater than             |
+| `<=`     | Less than or equal to    |
+| `>=`     | Greater than or equal to |
+| `==`     | Equal to                 |
+| `!=`     | Not equal to             |
 
 Comparison operators can be used in expressions to control the flow of your program. For example, you can use a comparison operator in a conditional statement to check if a condition is met.
 
@@ -456,18 +453,17 @@ Suppose you are a judge and you are comparing two people. You use the comparison
 
 Comparison operators in C++ are like the comparison tools that a judge uses. They allow you to compare two values and determine which value is greater or less than the other.
 
-##### 4. Logical Operators: 
+##### 4. Logical Operators:
 
 Logical operators in C++ are used to combine boolean values to produce new boolean values.
 
 The following table shows the most common logical operators in C++:
 
-| Operator | Description |
-|---|---|
-| `&&` | Logical AND |
-| <code>&#124;&#124;</code> | Logical OR |
-| `!` | Logical NOT |
-
+| Operator                  | Description |
+| ------------------------- | ----------- |
+| `&&`                      | Logical AND |
+| <code>&#124;&#124;</code> | Logical OR  |
+| `!`                       | Logical NOT |
 
 Logical operators can be used to control the flow of your program. For example, you can use a logical operator in a conditional statement to check if multiple conditions are met.
 
@@ -503,7 +499,6 @@ Logical operators in C++ are like the tools that a judge uses to determine the g
 #### Chapter 3: User Input
 
 ![](./images/user-input.png)
-
 
 User input in C++ is the process of getting data from the user and storing it in a variable. This can be done using the `cin` object.
 
@@ -568,7 +563,7 @@ int main()
     cout<< z; //output 8.02
     return 0;
 }
-``` 
+```
 
 ```c++
 #include<iostream>
@@ -608,7 +603,6 @@ If you are a traffic controller and you are controlling the flow of traffic at a
 
 Conditions in C++ are like traffic lights. They control the flow of your program in different directions depending on the outcome of the check.
 
-  
 If-else statements in C++ are used to control the flow of your program based on a condition. If the condition is true, the code inside the if statement is executed. Otherwise, the code inside the else statement is executed.
 
 The syntax for an if-else statement is as follows:
@@ -664,3 +658,7 @@ The number is equal to 20
 ```
 
 If-else statements are a powerful tool for controlling the flow of your program. They can be used to make your code more modular and reusable.
+
+---
+
+> Let's Create a Difference, Together
