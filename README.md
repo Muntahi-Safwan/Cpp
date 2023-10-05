@@ -661,4 +661,71 @@ If-else statements are a powerful tool for controlling the flow of your program.
 
 ---
 
+#### Chapter 5: Switch Case
+
+Switch cases in C++ are used to control the flow of your program based on a value. The value can be any type of data, such as an integer, a character, or a string.
+
+The syntax for a switch case statement is as follows:
+
+```C++
+switch (value) {
+  case value1:
+    // Code executed if value is equal to value1
+    break;
+  case value2:
+    // Code executed if value is equal to value2
+    break;
+  ...
+  default:
+    // Code executed if value is not equal to any of the case values
+}
+```
+
+The break statement is used to exit the switch case statement after the code for a specific case has been executed.
+
+For example, the following code uses a switch case statement to check the value of the variable my_number and print the appropriate message:
+
+```C++
+int my_number = 10;
+
+switch (my_number) {
+  case 10:
+    cout << "The number is equal to 10" << endl;
+    break;
+  case 20:
+    cout << "The number is equal to 20" << endl;
+    break;
+  case 30:
+    cout << "The number is equal to 30" << endl;
+    break;
+  default:
+    cout << "The number is not equal to 10, 20, or 30" << endl;
+}
+```
+
+Output:
+
+```
+  The number is equal to 10
+```
+
+Switch case statements are a powerful tool for controlling the flow of your program. They can be used to make your code more modular and reusable.
+
+If you are at a restaurant and you are ordering food. You tell the waiter what you want to order, and the waiter brings you the food.
+
+The switch case statement in C++ is like the waiter. It checks the value of a variable and then executes the appropriate code.
+
+###### Summary Points:
+
+1. The `switch` expression is evaluated once.
+2. The value of the expression is compared with the values of each case.
+3. If there is a match, the associated block of code is executed.
+4. The `break` and `default` keywords are optional.
+5. When C++ reaches a `break` keyword, it breaks out of the switch block.
+6. This will stop the execution of more code and case testing inside the block.
+7. When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+8. The `default` keyword specifies some code to run if there is no case match.
+
+---
+
 > Let's Create a Difference, Together
