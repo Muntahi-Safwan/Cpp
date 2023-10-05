@@ -276,7 +276,7 @@ String concatenation can be used to create new strings, or to modify existing st
 Here is an example of how to use string concatenation to create a new string:
 
 ```c++
-string my_name = "Bard";
+string my_name = "C++";
 string my_greeting = "Hello, " + my_name + "!";
 ```
 
@@ -725,6 +725,11 @@ The switch case statement in C++ is like the waiter. It checks the value of a va
 6. This will stop the execution of more code and case testing inside the block.
 7. When a match is found, and the job is done, it's time for a break. There is no need for more testing.
 8. The `default` keyword specifies some code to run if there is no case match.
+
+
+---
+
+
 
 ---
 
