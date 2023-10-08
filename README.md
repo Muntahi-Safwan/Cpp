@@ -659,6 +659,39 @@ The number is equal to 20
 
 If-else statements are a powerful tool for controlling the flow of your program. They can be used to make your code more modular and reusable.
 
+Here are 10 if else basic problems for you to exercise and practice: 
+
+```
+1. Take values of length and breadth of a reactangle from user and check if it is square or not.
+2. Take two int values from user and print the greatest among them 
+3. Take a number as int from user and show whether it is odd or even
+4. User will give a year and show that if the year is a leap year or not                           
+5. A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+	Ask user for quantity
+	Suppose, one unit will cost 100.
+	Judge and print total cost for user.                                                   
+6. A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years. Ask user for their salary and year of service and print the net bonus amount.                                                                                  
+7. Find the maximum of three numbers taken from user                                                    
+8. A school has following rules for grading system:
+	a. Below 25 - F
+	b. 25 to 45 - E
+	c. 45 to 50 - D
+	d. 50 to 60 - C
+	e. 60 to 80 - B
+	f. Above 80 - A
+Ask user to enter marks and print the corresponding grade.
+9. Write a program to print absolute vlaue of a number entered by user. E.g.-
+	INPUT: 1        OUTPUT: 1
+	INPUT: -1        OUTPUT: 1
+10. A student will not be allowed to sit in exam if his/her attendence is less than 75%.
+	Take following input from user
+	Number of classes held
+	Number of classes attended.
+	And print
+	percentage of class attended
+	Is student is allowed to sit in exam or not.
+```
+
 ---
 
 #### Chapter 5: Switch Case
