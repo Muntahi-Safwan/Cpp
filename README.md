@@ -1058,6 +1058,206 @@ This is basically how a for loop works. You start with a counter variable, which
 
 For loops are a very important concept in programming. They are used in all sorts of programs, from simple scripts to complex applications.
 
+##### Break & Continue
+
+**Break** and **Continue** are two statements in C++ that can be used to control the flow of loops.
+
+**Break** statement is used to terminate the loop immediately and skip the rest of the loop iterations. It can be used to exit a loop early if a certain condition is met.
+
+**Continue** statement is used to skip the rest of the current loop iteration and start the next iteration immediately. It can be used to skip over certain iterations of a loop if a certain condition is met.
+
+**Here are some examples:**
+
+```c++
+// Break example
+for (int i = 0; i < 10; i++) {
+  if (i == 5) {
+    break;
+  }
+  cout << i << endl;
+}
+
+// Continue example
+for (int i = 0; i < 10; i++) {
+  if (i % 2 == 0) {
+    continue;
+  }
+  cout << i << endl;
+}
+```
+
+Output of the first example:
+
+```
+0
+1
+2
+3
+4
+```
+
+Output of the second example:
+
+```
+1
+3
+5
+7
+9
+```
+
+**Break and Continue** statements can be used to make your code more efficient and concise. However, it is important to use them carefully to avoid unexpected results.
+
+---
+
+#### Chapter 7: Arrays
+
+![](./images/arrays.png)
+
+Suppose you want to store the name of all your friends. For this you can do the following things:
+
+```c++
+string friend1 = "John";
+string friend2 = "Mosh";
+string friend3 = "Harry";
+string friend4 = "David";
+string friend5 = "Rick";
+```
+
+but this is a very tedious way to store every name of your friend one by one like this. To solve this problem arrays were introduced. We can store all the friends name in a single variable by this way: 
+
+```c++
+string friends[5] = {"John", "Mosh", "Harry", "David", "Rick"};
+```
+
+This makes code easier to write and understand. Optimizes the code in a much better way.
+
+**Arrays in C++** are a data structure that allows you to store a collection of similar data types in a contiguous block of memory. This means that all of the elements in an array are stored right next to each other in memory, which makes it very efficient to access them.
+
+To declare an array in C++, you need to specify the data type of the elements and the size of the array. For example, the following code declares an array of 10 integers:
+
+```c++
+int numbers[10];
+```
+
+Once you have declared an array, you can access the elements of the array using their indices. The index of an element is simply its position in the array. The first element in the array has an index of 0, the second element has an index of 1, and so on.
+
+To access an element of an array, you use the following syntax:
+
+```c++
+array_name[index]
+```
+
+For example, the following code accesses the second element of the `numbers` array:
+
+```c++
+int second_element = numbers[1];
+```
+
+You can also use a for loop to iterate over all of the elements in an array. For example, the following code prints all of the elements in the `numbers` array to the console:
+
+```c++
+for (int i = 0; i < 10; i++) {
+  cout << numbers[i] << endl;
+}
+```
+
+Arrays can be used to store any type of data, including integers, floating-point numbers, characters, and even other arrays. Arrays are a very powerful data structure, and they are used in a wide variety of C++ programs.
+
+Here are some additional things to keep in mind about arrays in C++:
+
+- Arrays are zero-indexed. This means that the first element in an array has an index of 0.
+- The size of an array must be specified when it is declared. Once an array is declared, its size cannot be changed.
+- Arrays are stored in contiguous memory, which makes them very efficient to access.
+- Arrays can be passed to functions as arguments.
+- Arrays can be returned from functions as results.
+
+**Here is an example of a simple C++ program that uses arrays:**
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+  int numbers[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+  // Print all of the elements in the array to the console.
+  for (int i = 0; i < 10; i++) {
+    cout << numbers[i] << endl;
+  }
+
+  return 0;
+}
+```
+
+Output:
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+Arrays are a very powerful data structure, and they are used in a wide variety of C++ programs. If you are new to C++, I encourage you to learn more about arrays so that you can start using them in your own programs.
+
+---
+#### Chapter 8: String
+
+![](./images/stringh.png)
+
+Yeah you might be thinking why this chapter is called string. You already know what is string, its a data type. But we are not talking about the data type `string` rather we will learn about different string functions which are available in the `string.h` header file. 
+
+The `string.h` header file in C++ contains a number of functions that can be used to manipulate strings. Some of the most common string functions include:
+
+- **strlen():** Returns the length of a string.
+- **strcpy():** Copies one string to another.
+- **strncpy():** Copies a specified number of characters from one string to another.
+- **strcat():** Concatenates two strings together.
+- **strncat():** Concatenates a specified number of characters from one string to another.
+- **strcmp():** Compares two strings and returns a value indicating whether the first string is less than, equal to, or greater than the second string.
+- **strncmp():** Compares a specified number of characters from two strings and returns a value indicating whether the first string is less than, equal to, or greater than the second string.
+
+Here are some examples of how to use these string functions:
+
+```c++
+// Get the length of a string
+int length = strlen("Hello, world!");
+
+// Copy one string to another
+char source[] = "Hello, world!";
+char destination[20];
+strcpy(destination, source);
+
+// Copy a specified number of characters from one string to another
+strncpy(destination, source, 5);
+
+// Length of string
+char course = "C++";
+int length = strlen(course); // 3
+
+// Concatenate two strings together
+strcat(destination, "!");
+
+// Compare two strings
+int result = strcmp(destination, "Hello, world!");
+
+// Compare a specified number of characters from two strings
+int n = strncmp(destination, source, 5);
+```
+
+The `string.h` header file also contains a number of other string functions, such as `strchr()`, `strrchr()`, `strstr()`, and `strtok()`. These functions can be used to perform a variety of tasks, such as finding characters and substrings in strings, and splitting strings into tokens.
+
+![](./images/string-example.png)
+
+String functions are a very powerful tool, and they are used in a wide variety of C++ programs. If you are new to C++, I encourage you to learn more about string functions so that you can start using them in your own programs.
+
 ---
 
 > Let's Create a Difference, Together
