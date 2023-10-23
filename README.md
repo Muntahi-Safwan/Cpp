@@ -1258,6 +1258,12 @@ The `string.h` header file also contains a number of other string functions, suc
 
 String functions are a very powerful tool, and they are used in a wide variety of C++ programs. If you are new to C++, I encourage you to learn more about string functions so that you can start using them in your own programs.
 
+If you are interested in learning more string functions, check out these resources: 
+
+ - [Geeks for Geeks](https://www.geeksforgeeks.org/string-functions-in-c/)
+ - [Tutorials Point](https://www.tutorialspoint.com/c_standard_library/string_h.htm)
+ - [Coding Ninjas](https://www.codingninjas.com/studio/library/string-h-in-c-c)
+
 ---
 
 > Let's Create a Difference, Together
