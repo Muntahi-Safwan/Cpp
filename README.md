@@ -817,10 +817,10 @@ int x = 10;
 int y = 5;
 
 // n++
-int sum = x + n++; // sum is 15
+int sum = x + y++; // sum is 15
 
 // ++n
-int product = x * ++n; // product is 16
+int product = x * ++y; // product is 70
 ```
 
 In the first expression, `n` is used in the addition operation before it is incremented. This means that the value of `n` used in the expression is 10. In the second expression, `n` is incremented before it is used in the multiplication operation. This means that the value of `n` used in the expression is 11.
